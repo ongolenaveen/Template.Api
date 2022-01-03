@@ -26,3 +26,6 @@ $container = New-AzContainerInstanceObject -Name test-container -Image jayasrilt
 $imageRegistryCredential = New-AzContainerGroupImageRegistryCredentialObject -Server "jayasriltdcontainerregistry.azurecr.io" -Username "jayasriltdcontainerregistry" -Password (ConvertTo-SecureString "yourpassword" -AsPlainText -Force) 
  
 $containerGroup = New-AzContainerGroup -ResourceGroupName JayasriLtdResourceGroup -Name naveen-template-app -Location eastus -Container $container -ImageRegistryCredential $imageRegistryCredential -IPAddressType Public
+
+![image](https://user-images.githubusercontent.com/1476057/147956219-0d612548-33a5-4e90-a6c8-cb6138f42822.png)
+
